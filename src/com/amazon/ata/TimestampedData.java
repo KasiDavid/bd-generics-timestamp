@@ -37,10 +37,14 @@ public class TimestampedData<T> {
         this(data, ZonedDateTime.now());
     }
 
-    // PARTICIPANTS: implement getter for data here
+    public T getData() {
+        return data;
+    }
     public ZonedDateTime getTimestamp() {
         return timestamp;
     }
+
+
 
     @Override
     public String toString() {
